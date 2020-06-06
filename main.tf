@@ -77,8 +77,8 @@ module "jenkins" {
 }
 
 module "cert-manager" {
-  source  = "git::https://gitlab.hrz.tu-chemnitz.de/faeng--tu-chemnitz.de/terraform_cert_manger_google.git?ref=k8s-provider-integration"
-  # https://gitlab.hrz.tu-chemnitz.de/faeng--tu-chemnitz.de/terraform_cert_manger_google.git?ref=k8s-provider-integration
+  source  = "git::https://gitlab.hrz.tu-chemnitz.de/faeng--tu-chemnitz.de/terraform_cert_manger_google.git"
+
   cluster_name            = module.gke.cluster_name
   root_domain             = var.root_domain
   lets_encrypt_email      = var.email
