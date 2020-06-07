@@ -24,7 +24,7 @@ crash.log
 #
 # example.tfvars
 creds.tfvars
-testproject*.json
+credentials.json
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
