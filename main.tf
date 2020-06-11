@@ -77,13 +77,13 @@ module "jenkins" {
 }
 
 module "cert-manager" {
-  source  = "git::https://gitlab.hrz.tu-chemnitz.de/faeng--tu-chemnitz.de/terraform_cert_manger_google.git"
+  source  = "git::https://gitlab.hrz.tu-chemnitz.de/faeng--tu-chemnitz.de/terraform_cert_manger_google.git?ref=feat/testcert"
 
   cluster_name            = module.gke.cluster_name
   root_domain             = var.root_domain
   lets_encrypt_email      = var.email
   project_id              = var.project_id
+  account_id              = var.account_id
   location                = var.location
-  iam_account             = var.iam_account
   acme_server_url         = "https://acme-staging-v02.api.letsencrypt.org/directory"
 }

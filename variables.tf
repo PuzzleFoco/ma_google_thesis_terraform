@@ -35,7 +35,7 @@ variable "email" {
   type          = string
 }
 
-variable "iam_account" {
+variable "account_id" {
   description   = "the gcp iam account name"
   type          = string
 }
