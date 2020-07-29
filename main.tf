@@ -60,7 +60,6 @@ module "nginx" {
       "enabled"        : "true",
       "loadBalancerIP" : module.google_dns_zone.ip_address,
     }
-
     annotations    = [
         {
           "annotation_key" : "kubernetes.io/ingress.global-static-ip-name",
