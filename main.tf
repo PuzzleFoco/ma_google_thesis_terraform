@@ -10,8 +10,6 @@ module "gke" {
     gke_cluster_name    = "googleexamplecluster"
     location            = var.location
     project             = var.project_id
-    min_master_version  = "1.15.9-gke.24"
-
 }
 
 provider "kubernetes" {
